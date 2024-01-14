@@ -22,7 +22,7 @@ playerX_change = 0
 # mixer.Sound("laser.wav").play()
 
 def player(x, y):
-    screen.bulit(img, (X, Y))
+    screen.bulit(playerImg, (x, y))
 
 
 # 画面をずっと表示させる 無限ループ
