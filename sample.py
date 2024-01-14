@@ -19,7 +19,7 @@ X = 370
 Y = 400
 
 # 音声の出力
-mixer.Sound("laser.wav")
+mixer.Sound("laser.wav").play()
 
 
 # 画面をずっと表示させる 無限ループ
@@ -27,6 +27,10 @@ running = True
 while running:
     # 画像の表示
     screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
+    # 文字の表示
+    font = pygame.font.System(None, 80)
+    message = font.render("Hello world")
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
