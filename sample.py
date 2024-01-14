@@ -13,11 +13,15 @@ pygame.display.set_caption("Invaders Game")
 
 # 画像の表示
 img = pygame.image.load("player.png")
+X = 370
+Y = 400
 
 
 # 画面をずっと表示させる 無限ループ
 running = True
 while running:
+    # 画像の表示
+    screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
