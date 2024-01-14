@@ -5,4 +5,9 @@ pygame.init()
 
 # 画面を作成する
 
-pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((800, 600))
+
+# 画面をずっと表示させる
+
+running = True
+while running:
