@@ -7,7 +7,11 @@ pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
 
-# 画面をずっと表示させる
+# 画面をずっと表示させる 無限ループ
 
 running = True
 while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    
