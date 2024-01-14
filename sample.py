@@ -15,8 +15,8 @@ pygame.display.set_caption("Invaders Game")
 
 # Playerの配置
 PlayerImg = pygame.image.load("player.png")
-X = 370
-Y = 400
+playerX, playerY = 370, 400
+
 
 # 音声の出力
 mixer.Sound("laser.wav").play()
