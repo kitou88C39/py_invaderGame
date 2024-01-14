@@ -28,6 +28,7 @@ def player(x, y):
 # 画面をずっと表示させる 無限ループ
 running = True
 while running:
+    screen.fill((0, 0, 0))
     # 画像の表示
     # screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
     # 文字の表示
@@ -39,6 +40,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     
+    playerX += 1.5
     player(playerX, playerY)
 # screen上を書き換えた場合、updateする必要がある
     pygame.display.update()
