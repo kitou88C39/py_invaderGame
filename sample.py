@@ -19,14 +19,15 @@ playerX, playerY = 370, 400
 playerX_change = 0
 
 # 音声の出力
-mixer.Sound("laser.wav").play()
+# mixer.Sound("laser.wav").play()
+screen.bulit(img, (X,Y))
 
 
 # 画面をずっと表示させる 無限ループ
 running = True
 while running:
     # 画像の表示
-    screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
+    # screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
     # 文字の表示
     font = pygame.font.System(None, 80)
     message = font.render("Hello world", False, (255, 255, 255))
