@@ -11,6 +11,8 @@ screen.fill((150, 150, 150))
 # Windowのタイトルを変更する
 pygame.display.set_caption("Invaders Game")
 
+# 画像の表示
+img = pygame.image.load("player.png")
 
 
 # 画面をずっと表示させる 無限ループ
