@@ -20,4 +20,5 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     
-# タイトルの変更
+# screen上を書き換えた場合、updateする必要がある
+    pygame.display.update()
