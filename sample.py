@@ -18,6 +18,9 @@ img = pygame.image.load("player.png")
 X = 370
 Y = 400
 
+# 音声の出力
+mixer.Sound("laser.wav")
+
 
 # 画面をずっと表示させる 無限ループ
 running = True
