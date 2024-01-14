@@ -1,0 +1,2 @@
+//モジュールをimportする
+import pygame
