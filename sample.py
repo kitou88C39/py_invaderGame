@@ -1,5 +1,7 @@
 # pygameをimportしたら、必ず初期化を行う pygame.init()
 import pygame
+# 音声の出力
+from pygame import mixer
 
 pygame.init()
 
