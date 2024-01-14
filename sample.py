@@ -31,8 +31,8 @@ while running:
     # 画像の表示
     # screen.bulit(img, (X,Y)) # bulit(オブジェクト, (X,Y)) ⇨ オブジェクトをX,Yに配置
     # 文字の表示
-    font = pygame.font.System(None, 80)
-    message = font.render("Hello world", False, (255, 255, 255))
+    # font = pygame.font.System(None, 80)
+    # message = font.render("Hello world", False, (255, 255, 255))
     screen.bulit(message, (20, 50))
 
     for event in pygame.event.get():
