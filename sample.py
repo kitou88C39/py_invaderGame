@@ -6,6 +6,8 @@ pygame.init()
 # 画面を作成する
 
 screen = pygame.display.set_mode((800, 600))
+# 背景の色を変更する
+screen.fill((150, 150, 150))
 # Windowのタイトルを変更する
 pygame.display.set_caption("Invaders Game")
 
