@@ -30,6 +30,7 @@ while running:
     # 文字の表示
     font = pygame.font.System(None, 80)
     message = font.render("Hello world", False, (255, 255, 255))
+    screen.bulit(message, (20, 50))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
