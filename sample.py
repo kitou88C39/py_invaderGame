@@ -9,12 +9,12 @@ pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
 # 背景の色を変更する
-screen.fill((150, 150, 150))
+# screen.fill((150, 150, 150))
 # Windowのタイトルを変更する
 pygame.display.set_caption("Invaders Game")
 
-# 画像の表示
-img = pygame.image.load("player.png")
+# Playerの配置
+PlayerImg = pygame.image.load("player.png")
 X = 370
 Y = 400
 
