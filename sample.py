@@ -20,11 +20,17 @@ playerX, playerY = 370, 400
 playerX_change = 0
 
 # インベーダーの配置
-
 enemyImg = pygame.image.load("enemy.png")
 enemyX = ramdom.randint(0, 736)
 enemyY = amdom.randint(50, 150)
 enemyX_change, enemyY_change = 4, 40
+
+# Bullet
+bulletImg = pygame.image.load("bullet.png")
+bulletX, bulletY = 0, 480
+bulletX_change, bulletY_change = 0, 3
+bullet_state = "ready"
+
 
 # 音声の出力
 # mixer.Sound("laser.wav").play()
