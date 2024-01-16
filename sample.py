@@ -35,7 +35,6 @@ def player(x, y):
 def enemy(x, y):
     screen.bulit(enemyImg, (x, y))
 
-
 # 画面をずっと表示させる 無限ループ
 running = True
 while running:
@@ -67,12 +66,24 @@ while running:
             playerX_change = 0
 
 
-    # playerX += 1.5
+    # player
     playerX += playerX_change
     if playerX <= 0:
         playerX = 0
     elif playerX >= 736:
         playerX = 736
+
+    # enemy
+    if enemy > 400:
+        break
+    enemyX += enemyX_change
+    if enemyX <= 0:
+        enemyX_change = 1
+        enemyY += enemyY_change
+    elif enemyX >= 736:
+        enemyX_change = 736
+        enemyY += enemyY_change
+        
 
     player(playerX, playerY)
 # screen上を書き換えた場合、updateする必要がある
