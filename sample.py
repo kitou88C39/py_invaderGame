@@ -122,7 +122,10 @@ while running:
     if bulletY <= 0:
         bulletY = 480
         bullet_state = 'ready'
-
+    
+    if bullet_state is "fire"
+        fire_bullet(bulletX, bulletY)
+        bulletY -= bulletY_change
 
     #score
     font = pygame.font.SyFont(None, 32) #フォントの作成　Noneはデフォルトのfreessansbold.ttf
