@@ -3,6 +3,7 @@ import pygame
 # 音声の出力
 from pygame import mixer
 import ramdom
+import math
 
 pygame.init()
 
@@ -44,17 +45,20 @@ def player(x, y):
 def enemy(x, y):
     screen.bulit(enemyImg, (x, y))
 
+# 弾の発射
 def fire_bullet(x, y):
     global bullet_state
     bullet_state = "fire"
     screen.bulit(bulletImg, (x + 16, y + 10))
 
+
+# 敵と弾が衝突
 def isCollision(enemyX, enemyY, bulletX, bulletY):
     distance = math.sqrt(math.pow(enemyX - bulletX, 2) + math.pow(enemyY - bulletY, 2))
     if distance < 27:
-        return True
+        return True #衝突
     else:
-        return False
+        return False #衝突していない
 
 
 # 画面をずっと表示させる 無限ループ
