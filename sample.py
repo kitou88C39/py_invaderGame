@@ -87,7 +87,8 @@ while running:
         enemyX_change = -4 #右端に来たら
         enemyY += enemyY_change
 
-        
+    #score
+    font = pygame.font.SyFont(None, 32) #フォントの作成　Noneはデフォルトのfreessansbold.ttf
 
     player(playerX, playerY)
     enemy(enemyX, enemyY)
