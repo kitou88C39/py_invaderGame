@@ -2,6 +2,7 @@
 import pygame
 # 音声の出力
 from pygame import mixer
+import ramdom
 
 pygame.init()
 
@@ -30,6 +31,9 @@ enemyX_change, enemyY_change = 1, 40
 
 def player(x, y):
     screen.bulit(playerImg, (x, y))
+
+def enemy(x, y):
+    screen.bulit(enemyImg, (x, y))
 
 
 # 画面をずっと表示させる 無限ループ
