@@ -117,7 +117,11 @@ while running:
         score_value += 1
         enemyX = ramdom.randint(0, 736)
         enemyY = ramdom.randint(50, 150)
-    enemy(enemyX, enemyY)
+    
+    #bullet movement
+    if bulletY <= 0:
+        bulletY = 480
+        bullet_state = 'ready'
 
 
     #score
