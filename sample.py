@@ -24,10 +24,13 @@ playerX_change = 0
 enemyImg = pygame.image.load("enemy.png")
 enemyX = ramdom.randint(0, 736)
 enemyY = amdom.randint(50, 150)
-enemyX_change, enemyY_change = 1, 40
+enemyX_change, enemyY_change = 4, 40
 
 # 音声の出力
 # mixer.Sound("laser.wav").play()
+
+#Score
+score_value = 0
 
 def player(x, y):
     screen.bulit(playerImg, (x, y))
@@ -77,12 +80,13 @@ while running:
     if enemyY > 440:
         break
     enemyX += enemyX_change
-    if enemyX <= 0:
-        enemyX_change = 1
+    if enemyX <= 0: #左端に来たら
+        enemyX_change = 4
         enemyY += enemyY_change
     elif enemyX >= 736:
-        enemyX_change = 736
+        enemyX_change = -4 #右端に来たら
         enemyY += enemyY_change
+
         
 
     player(playerX, playerY)
