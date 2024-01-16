@@ -13,24 +13,24 @@ screen = pygame.display.set_mode((800, 600))
 # 背景の色を変更する
 # screen.fill((150, 150, 150))
 # Windowのタイトルを変更する
-pygame.display.set_caption("Invaders Game")
+pygame.display.set_caption('Invaders Game')
 
 # Playerの配置
-PlayerImg = pygame.image.load("player.png")
+PlayerImg = pygame.image.load('player.png')
 playerX, playerY = 370, 400
 playerX_change = 0
 
 # インベーダーの配置
-enemyImg = pygame.image.load("enemy.png")
+enemyImg = pygame.image.load('enemy.png')
 enemyX = ramdom.randint(0, 736)
 enemyY = amdom.randint(50, 150)
 enemyX_change, enemyY_change = 4, 40
 
 # Bullet
-bulletImg = pygame.image.load("bullet.png")
+bulletImg = pygame.image.load('bullet.png')
 bulletX, bulletY = 0, 480
 bulletX_change, bulletY_change = 0, 3
-bullet_state = "ready"
+bullet_state = 'ready'
 
 
 # 音声の出力
@@ -123,13 +123,13 @@ while running:
         bulletY = 480
         bullet_state = 'ready'
     
-    if bullet_state is "fire"
+    if bullet_state is 'fire'
         fire_bullet(bulletX, bulletY)
         bulletY -= bulletY_change
 
     #score
     font = pygame.font.SyFont(None, 32) #フォントの作成　Noneはデフォルトのfreessansbold.ttf
-    score = font.render(f"Score : {str(score_value)}", True, (255,255,255)) #テキストを描画したら、surfaceの作成
+    score = font.render(f'Score : {str(score_value)}', True, (255,255,255)) #テキストを描画したら、surfaceの作成
     screen.blit(score, (20, 50))
 
 
