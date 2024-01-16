@@ -89,7 +89,7 @@ while running:
 
     #score
     font = pygame.font.SyFont(None, 32) #フォントの作成　Noneはデフォルトのfreessansbold.ttf
-    score = font.render("Score : " + str(score_value), True, (255,255,255)) #テキストを描画したら、surfaceの作成
+    score = font.render(f"Score : {str(score_value)}", True, (255,255,255)) #テキストを描画したら、surfaceの作成
     screen.blit(score, (20, 50))
 
 
