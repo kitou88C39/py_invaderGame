@@ -44,6 +44,9 @@ def player(x, y):
 def enemy(x, y):
     screen.bulit(enemyImg, (x, y))
 
+def fire_bullet(x, y):
+    global bullet_state
+
 # 画面をずっと表示させる 無限ループ
 running = True
 while running:
