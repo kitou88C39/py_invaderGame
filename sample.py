@@ -18,6 +18,13 @@ PlayerImg = pygame.image.load("player.png")
 playerX, playerY = 370, 400
 playerX_change = 0
 
+# インベーダーの配置
+
+enemyImg = pygame.image.load("enemy.png")
+enemyX = ramdom.randint(0, 736)
+enemyY = amdom.randint(50, 150)
+enemyX_change, enemyY_change = 1, 40
+
 # 音声の出力
 # mixer.Sound("laser.wav").play()
 
