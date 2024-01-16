@@ -41,19 +41,20 @@ while running:
             running = False
 
     # 矢印キーを動かして、playerを動かす
-    if event.type == pygame.KEYDOM:
+    if event.type == pygame.KEYDOWN:
        if event.type == pygame.K_LEFT:
             playerX_change = -1.5
        if event.type == pygame.K_RIGHT:
-            playerX_change = -1.5
-        if event.type == pygame.K_SPACE:
-            if bullet_state is 'ready':
-                bulletX = playerX
-                fire_bullet(bulletX, bulletY)
+            playerX_change = 1.5
+        # if event.type == pygame.K_SPACE:
+            # if bullet_state is 'ready':
+            #     bulletX = playerX
+            #     fire_bullet(bulletX, bulletY)
 
 
     
-    playerX += 1.5
+    # playerX += 1.5
+    playerX += playerX_change
     player(playerX, playerY)
 # screen上を書き換えた場合、updateする必要がある
     pygame.display.update()
