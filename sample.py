@@ -55,8 +55,14 @@ while running:
         if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
             playerX_change = 0
 
+
     # playerX += 1.5
     playerX += playerX_change
+    if playerX <= 0:
+        playerX = 0
+    elif playerX >= 736:
+        playerX = 736
+
     player(playerX, playerY)
 # screen上を書き換えた場合、updateする必要がある
     pygame.display.update()
