@@ -46,6 +46,11 @@ def enemy(x, y):
 
 def fire_bullet(x, y):
     global bullet_state
+    bullet_state = "fire"
+    screen.bulit(bulletImg, (x + 16, y + 10))
+
+
+
 
 # 画面をずっと表示させる 無限ループ
 running = True
