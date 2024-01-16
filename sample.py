@@ -74,7 +74,7 @@ while running:
         playerX = 736
 
     # enemy
-    if enemy > 400:
+    if enemyY > 440:
         break
     enemyX += enemyX_change
     if enemyX <= 0:
@@ -86,5 +86,6 @@ while running:
         
 
     player(playerX, playerY)
+    enemy(enemyX, enemyY)
 # screen上を書き換えた場合、updateする必要がある
     pygame.display.update()
