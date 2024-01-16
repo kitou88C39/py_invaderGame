@@ -39,6 +39,14 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    # 矢印キーを動かして、playerを動かす
+    if event.type == pygame.KEYDOM:
+       if event.type == pygame.K_LEFT:
+            playerX_change = -1.5
+       if event.type == pygame.K_RIGHT:
+            playerX_change = -1.5
+
     
     playerX += 1.5
     player(playerX, playerY)
