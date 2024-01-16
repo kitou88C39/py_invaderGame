@@ -46,6 +46,11 @@ while running:
             playerX_change = -1.5
        if event.type == pygame.K_RIGHT:
             playerX_change = -1.5
+        if event.type == pygame.K_SPACE:
+            if bullet_state is 'ready':
+                bulletX = playerX
+                fire_bullet(bulletX, bulletY)
+
 
     
     playerX += 1.5
